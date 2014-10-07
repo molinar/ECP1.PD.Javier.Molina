@@ -1,5 +1,43 @@
 package gestionVehiculosTest;
 
-public class MotoTest {
+import static org.junit.Assert.*;
 
+import org.junit.Before;
+import org.junit.Test;
+
+import gestionVehiculos.Moto;
+
+public class MotoTest {
+    private Moto moto;
+
+    @Before
+    public void before() {
+        moto = new Moto(1, "X");
+    }
+
+    @Test
+    public void testGetPrecioUnDia() {
+        assertEquals(8, this.moto.getPrecioDia(1));
+    }    
+     
+    @Test
+    public void testGetPrecioSeisDias() {
+        assertEquals(48, this.moto.getPrecioDia(6));
+    }
+    
+    @Test
+    public void testGetPrecioSieteDias() {
+        assertEquals(56, this.moto.getPrecioDia(7));
+    }
+    
+    @Test
+    public void testGetPrecioOchoDias() {
+        assertEquals(63, this.moto.getPrecioDia(8));
+    }
+    
+    @Test
+    public void testGetPrecioDiezDias() {
+        assertEquals(77, this.moto.getPrecioDia(10));
+    }
+    
 }

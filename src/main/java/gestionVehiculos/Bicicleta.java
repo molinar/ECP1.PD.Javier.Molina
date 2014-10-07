@@ -2,8 +2,8 @@ package gestionVehiculos;
 
 public class Bicicleta extends Vehiculo {
 
-    public Bicicleta(int id, String descripcion, double precio) {
-        super(id, descripcion, precio);
+    public Bicicleta(int id, String descripcion) {
+        super(id, descripcion);
         // TODO Auto-generated constructor stub
     }
 

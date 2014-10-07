@@ -4,8 +4,8 @@ public class Coche extends Vehiculo {
 
     private Categoria categoria;
 
-    public Coche(int id, String descripcion, double precio, Categoria categoria) {
-        super(id, descripcion, precio);
+    public Coche(int id, String descripcion, Categoria categoria) {
+        super(id, descripcion);
         this.categoria = categoria;
     }
 

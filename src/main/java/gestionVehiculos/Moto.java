@@ -2,8 +2,8 @@ package gestionVehiculos;
 
 public class Moto extends Vehiculo {
 
-    public Moto(int id, String descripcion, double precio) {
-        super(id, descripcion, precio);
+    public Moto(int id, String descripcion) {
+        super(id, descripcion);
         // TODO Auto-generated constructor stub
     }
 

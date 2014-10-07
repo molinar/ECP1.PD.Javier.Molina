@@ -6,12 +6,9 @@ public abstract class Vehiculo {
 
     private final String descripcion;
 
-    private final double precio;
-
-    public Vehiculo(final int id, final String descripcion, final double precio) {
+    public Vehiculo(final int id, final String descripcion) {
         this.id = id;
         this.descripcion = descripcion;
-        this.precio = precio;
     }
 
     public int getId() {
