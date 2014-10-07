@@ -8,8 +8,8 @@ public class Bicicleta extends Vehiculo {
     }
 
     @Override
-    public int mostrarPrecio() {
-        // TODO Auto-generated method stub
+    public int getPrecio() {
+       
         return 0;
     }
 

@@ -14,5 +14,14 @@ public abstract class Vehiculo {
         this.precio = precio;
     }
 
-    public abstract int mostrarPrecio();
+    public int getId() {
+        return this.id;
+    }
+
+    public String getDescripcion() {
+        return this.descripcion;
+    }
+    
+    public abstract int getPrecio();
+
 }

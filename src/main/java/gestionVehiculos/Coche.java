@@ -10,9 +10,13 @@ public class Coche extends Vehiculo {
     }
 
     @Override
-    public int mostrarPrecio() {
+    public int getPrecio() {
         // TODO Auto-generated method stub
         return 0;
+    }
+    
+    public Categoria getCategoria(){
+        return categoria;
     }
 
 }
