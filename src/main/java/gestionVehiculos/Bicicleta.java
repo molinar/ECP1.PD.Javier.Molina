@@ -8,7 +8,7 @@ public class Bicicleta extends Vehiculo {
     }
 
     @Override
-    public int getPrecio() {
+    public int getPrecioDia(int dias) {
        
         return 0;
     }

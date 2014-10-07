@@ -22,6 +22,6 @@ public abstract class Vehiculo {
         return this.descripcion;
     }
     
-    public abstract int getPrecio();
+    public abstract int getPrecioDia(int dias);
 
 }

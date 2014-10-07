@@ -8,7 +8,7 @@ public class Moto extends Vehiculo {
     }
 
     @Override
-    public int getPrecio() {
+    public int getPrecioDia(int dias) {
         // TODO Auto-generated method stub
         return 0;
     }
