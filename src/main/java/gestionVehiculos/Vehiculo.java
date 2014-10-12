@@ -18,7 +18,7 @@ public abstract class Vehiculo {
     public String getDescripcion() {
         return this.descripcion;
     }
-    
-    public abstract int getPrecioDia(int dias);
+
+    public abstract double getPrecioDia(int dias);
 
 }

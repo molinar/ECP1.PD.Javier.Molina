@@ -1,14 +1,11 @@
 package gestionVehiculos;
 
 public enum Categoria {
-    A('A', 10), B('B', 15), C('C', 20);
-
-    public char categoria;
+    A(10), B(15), C(20);
 
     public int precio;
 
-    Categoria(char categoria, int precio) {
-        this.categoria = categoria;
+    Categoria(int precio) {
         this.precio = precio;
 
     }
