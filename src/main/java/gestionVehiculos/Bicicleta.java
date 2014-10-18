@@ -17,12 +17,17 @@ public class Bicicleta extends Vehiculo {
         double total = 0.0;
         for (int i = 0; i < dias; i++) {
             if (i < DIAS_DESCUENTO) {
-                total = +Bicicleta.PRECIO;
+                total += Bicicleta.PRECIO;
             } else if (i >= DIAS_DESCUENTO) {
-                total = +Bicicleta.PRECIO_DESCUENTO;
+                total += Bicicleta.PRECIO_DESCUENTO;
             }
         }
         return total;
+    }
+
+    @Override
+    public String toString() {
+        return "Bicicleta Id: " + this.getId() + " Descripción: " + this.getDescripcion();
     }
 
 }

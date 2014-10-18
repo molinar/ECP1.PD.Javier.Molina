@@ -18,22 +18,27 @@ public class BicicletaTest {
 
     @Test
     public void testGetPrecioUnDia() {
-        assertEquals(3, this.bicicleta.getPrecioDia(1));
+        assertEquals(3.0, this.bicicleta.getPrecioDia(1), 10e-2);
     }
 
     @Test
     public void testGetPrecioDosDias() {
-        assertEquals(6, this.bicicleta.getPrecioDia(2));
+        assertEquals(6.0, this.bicicleta.getPrecioDia(2), 10e-2);
     }
 
     @Test
     public void testGetPrecioTresDias() {
-        assertEquals(8, this.bicicleta.getPrecioDia(3));
+        assertEquals(8.0, this.bicicleta.getPrecioDia(3), 10e-2);
     }
 
     @Test
     public void testGetPrecioCuatroDias() {
-        assertEquals(10, this.bicicleta.getPrecioDia(4));
+        assertEquals(10.0, this.bicicleta.getPrecioDia(4), 10e-2);
+    }
+    
+    @Test
+    public void testToString() {
+        assertEquals("Bicicleta Id: 1 Descripción: X", bicicleta.toString());
     }
 
 }

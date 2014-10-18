@@ -20,5 +20,7 @@ public abstract class Vehiculo {
     }
 
     public abstract double getPrecioDia(int dias);
+    
+    public abstract String toString();
 
 }

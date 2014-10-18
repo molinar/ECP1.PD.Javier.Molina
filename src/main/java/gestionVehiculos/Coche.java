@@ -23,16 +23,21 @@ public class Coche extends Vehiculo {
         if (dias > 0) {
             for (int i = 0; i < dias; i++) {
                 if (i < DIAS_PRIMER_DESCUENTO) {
-                    total = +this.categoria.precio;
+                    total += this.categoria.precio;
                 } else if (i >= DIAS_PRIMER_DESCUENTO && i < DIAS_SEGUNDO_DESCUENTO) {
-                    total = +this.categoria.precio * PRIMER_DESCUENTO;
+                    total += this.categoria.precio * PRIMER_DESCUENTO;
                 } else if (i >= DIAS_SEGUNDO_DESCUENTO) {
-                    total = +this.categoria.precio * SEGUNDO_DESCUENTO;
+                    total += this.categoria.precio * SEGUNDO_DESCUENTO;
                 }
             }
         }else{
             assert false: "días tiene que tener un valor positivo";
         }
         return total;
+    }
+
+    @Override
+    public String toString() {
+        return "Coche Id: " + this.getId() + " Categoría: " + this.categoria + " Descripción: " + this.getDescripcion();
     }
 }
